@@ -1,4 +1,5 @@
 import { Outlet, Route, Routes } from "react-router-dom"
+import { ParkingList } from "../parking/ParkingLists"
 
 export const ApplicationViews = () => {
 	
@@ -15,8 +16,7 @@ export const ApplicationViews = () => {
                 </>
             }>
                 
-                {/* <Route path="locations" element={ < /> } />
-				 */}
+                <Route path="parkingLots" element={ <ParkingList /> } />
 
 				
             </Route>

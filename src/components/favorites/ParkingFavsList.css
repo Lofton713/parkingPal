@@ -1,0 +1,12 @@
+.parkingFavs {
+    flex-direction: column;
+}
+
+.parkingFav {
+    border-style: groove;
+    background-color: green;
+    color: blue;
+    margin: .5rem;
+    height: 2rem;
+    width: 40rem;
+}

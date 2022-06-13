@@ -49,6 +49,7 @@ export const ParkingList = () => {
             </div>
             <aside>
                 <button className="cheapButton" onClick={() =>{setExpensive(true)}}> Cheapest Lots </button>
+                <button className="showAllButton" onClick={() =>{setExpensive(false)}}> See All Lots </button>
             </aside>
 
             <section className="lots">

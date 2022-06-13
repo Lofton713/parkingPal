@@ -1,0 +1,21 @@
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    
+    font-style: oblique;
+    height: 3rem;
+    font-size: larger;
+    color: blueviolet;
+    
+}
+
+.navbar__item {
+    flex-basis: 20%;
+    list-style-type: none;
+    text-decoration-color: coral;
+}
+
+.navbar__logout {
+    margin-left: auto;
+}

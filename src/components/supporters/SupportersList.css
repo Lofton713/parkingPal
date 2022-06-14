@@ -1,0 +1,29 @@
+.supporters { 
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    height:auto;
+}
+
+
+.SG {
+    border-style: groove;
+    background-color: navy;
+    color: goldenrod;
+    margin: .5rem;
+    height: auto;
+    width: auto;
+    padding: 1rem;
+    
+}
+
+.favButton {
+    
+    margin-left: 5rem;
+    display: inline-flex;
+}
+
+.SGLink {
+    padding-top: 5rem;
+    color: gold;
+}

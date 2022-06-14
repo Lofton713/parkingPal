@@ -2,18 +2,18 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: left;
-    
+    background-color: gold;
     font-style: oblique;
     height: 3rem;
     font-size: larger;
-    color: blueviolet;
+    color: navy;
     
 }
 
 .navbar__item {
     flex-basis: 20%;
     list-style-type: none;
-    text-decoration-color: coral;
+    text-decoration-color: red;
 }
 
 .navbar__logout {

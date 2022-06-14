@@ -16,6 +16,10 @@ export const NavBar = () => {
             </li>
 
             <li className="navbar__item active">
+                <Link className="navbar__link" to="supporterGroups">supporter Groups</Link>
+            </li>
+
+            <li className="navbar__item active">
                 <Link className="navbar__link" to="/profile">My Profile</Link>
             </li>
 

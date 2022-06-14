@@ -36,18 +36,28 @@ export const ParkingFavsList = () => {
 
         <h2> My Parking Favorites </h2>
 
-        <ul className="parkingFavs">
+        <section className="parkingFavs">
             {
                 filteredParkingFavorites.map(
                     (parkingFavorite) => {
-                        return <li className="parkingFav" key={`parkingFavorite--${parkingFavorite.id}`}>
-                            {parkingFavorite?.parkingLot?.name}  - Price: ${parkingFavorite?.parkingLot?.price} Each
+                        return <article className="parkingFav" key={`parkingFavorite--${parkingFavorite.id}`}>
+                            <p>{parkingFavorite?.parkingLot?.name}  -  ${parkingFavorite?.parkingLot?.price} Per match</p>
+                            <p>{parkingFavorite.parkingLot.address}</p>
+                            <footer>
+                                <button className="reomoveButton" onClick={() => {
+                                    fetch(`http://localhost:8088/parkingFavorites/${parkingFavorite.id}`, {
+                                        method: "DELETE"
+                                    })
+                                }
+                                }>Remove Favorite
+                                </button>
+                            </footer>
 
-                        </li>
+                        </article>
                     }
                 )
             }
-        </ul>
+        </section>
 
     </>
 

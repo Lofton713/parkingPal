@@ -4,9 +4,9 @@
 
 .parkingFav {
     border-style: groove;
-    background-color: green;
-    color: blue;
+    background-color: gold;
+    color: navy;
     margin: .5rem;
-    height: 2rem;
+    height: auto;
     width: 40rem;
 }

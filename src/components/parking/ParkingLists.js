@@ -27,7 +27,7 @@ export const ParkingList = () => {
     )
     useEffect(
         () => {
-            if(expensive) {
+            if (expensive) {
                 const expensiveLots = parkingCopy.filter(parkingLot => parkingLot.price < 25)
                 setParkingCopy(expensiveLots)
             }
@@ -38,8 +38,21 @@ export const ParkingList = () => {
         [expensive]
     )
 
-    const handleSaveButtonClick = () => {
-        //event.preventDefault()
+    const handleSaveButtonClick = (event, parkingLot) => {
+        event.preventDefault()
+
+        const newLotFav = {
+            parkingLotId: parkingLot.id,
+            userId: parkingLot.userId
+        }
+
+        return fetch('http://localhost:8088/parkingFavorites', {
+            method: "POST",
+            headers: { "Content-type": "application/json" },
+            body: JSON.stringify(newLotFav)
+        })
+            .then(res => res.json())
+            .then(() => {})
     }
 
     return <>
@@ -48,8 +61,8 @@ export const ParkingList = () => {
                 <h2> Available Parking Lots </h2>
             </div>
             <aside>
-                <button className="cheapButton" onClick={() =>{setExpensive(true)}}> Cheapest Lots </button>
-                <button className="showAllButton" onClick={() =>{setExpensive(false)}}> See All Lots </button>
+                <button className="cheapButton" onClick={() => { setExpensive(true) }}> Cheapest Lots </button>
+                <button className="showAllButton" onClick={() => { setExpensive(false) }}> See All Lots </button>
             </aside>
 
             <section className="lots">
@@ -57,21 +70,21 @@ export const ParkingList = () => {
                     parkingCopy.map(
                         (parkingLot) => {
                             return <article className="lot" key={`parkingLot--${parkingLot.id}`}>
-                               <header>
+                                <header>
                                     <h4>{parkingLot.name}</h4>
                                 </header>
-                                    <div>
-                                     - Address: {parkingLot.address}
-                                     - Distance to Park: {parkingLot.distance} mi.
-                                     - Price: ${parkingLot.price} per match
-                                    </div>
+                                <div>
+                                    - Address: {parkingLot.address}
+                                    - Distance to Park: {parkingLot.distance} mi.
+                                    - Price: ${parkingLot.price} per match
+                                </div>
                                 <footer>
                                     Added by: {parkingLot.userId}
-                                <button className="favButton" onClick={() => handleSaveButtonClick()}>
-                Add to Favorites</button>
-                                </footer> 
+                                    <button className="favButton" onClick={(clickEvent) => handleSaveButtonClick(clickEvent, parkingLot)}>
+                                        Add to Favorites</button>
+                                </footer>
 
-                                    
+
 
 
 

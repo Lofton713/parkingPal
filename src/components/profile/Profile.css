@@ -10,3 +10,16 @@
     height: auto;
     width: 40rem;
 }
+
+.SGFavs {
+    flex-direction: column;
+}
+
+.SGFav {
+    border-style: groove;
+    background-color: grey;
+    color: navy;
+    margin: .5rem;
+    height: auto;
+    width: 40rem;
+}

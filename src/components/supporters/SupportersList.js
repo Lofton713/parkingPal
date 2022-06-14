@@ -4,6 +4,9 @@ import "./SupportersList.css"
 export const SupportersList = () => {
 
     const [supporters, setSupporters] = useState([])
+
+    const currentUser = localStorage.getItem("pal_user")
+    const currentUserObject = JSON.parse(currentUser)
     
     useEffect(
         () => {
@@ -20,8 +23,8 @@ export const SupportersList = () => {
         event.preventDefault()
 
         const newSGFav = {
-            supporterGroupId: supporterGroup.id,
-            userId: supporterGroup.userId
+            userId: currentUserObject.id,
+            supporterGroupId: supporterGroup.id
         }
 
         return fetch('http://localhost:8088/SGFaves', {

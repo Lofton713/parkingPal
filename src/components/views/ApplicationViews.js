@@ -1,5 +1,5 @@
 import { Outlet, Route, Routes } from "react-router-dom"
-import { ParkingFavsList } from "../favorites/ParkingFavsList"
+import { Profile } from "../profile/Profile"
 import { ParkingList } from "../parking/ParkingLists"
 import { SupportersList } from "../supporters/SupportersList"
 import "./ApplicationViews.css"
@@ -20,7 +20,7 @@ export const ApplicationViews = () => {
             }>
                 
                 <Route path="parkingLots" element={ <ParkingList /> } />
-                <Route path="profile" element={ <ParkingFavsList /> } />
+                <Route path="profile" element={ <Profile /> } />
                 <Route path="supporterGroups" element={ <SupportersList /> } />
 
 				

@@ -8,6 +8,9 @@ export const ParkingList = () => {
     const [parkingCopy, setParkingCopy] = useState([])
     const [expensive, setExpensive] = useState(false)
 
+    const currentUser = localStorage.getItem("pal_user")
+    const currentUserObject = JSON.parse(currentUser)
+
     useEffect(
         () => {
             fetch(`http://localhost:8088/parkingLots?_expand=user`)
@@ -43,7 +46,7 @@ export const ParkingList = () => {
 
         const newLotFav = {
             parkingLotId: parkingLot.id,
-            userId: parkingLot.userId
+            userId: currentUserObject.id
         }
 
         return fetch('http://localhost:8088/parkingFavorites', {

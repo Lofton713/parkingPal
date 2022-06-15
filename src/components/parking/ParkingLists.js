@@ -7,6 +7,7 @@ export const ParkingList = () => {
     const [parkingLots, setParkingLots] = useState([])
     const [parkingCopy, setParkingCopy] = useState([])
     const [expensive, setExpensive] = useState(false)
+    const [closest, setClosest] = useState(false)
 
     const currentUser = localStorage.getItem("pal_user")
     const currentUserObject = JSON.parse(currentUser)
@@ -41,6 +42,24 @@ export const ParkingList = () => {
         [expensive]
     )
 
+    useEffect(
+        () => {
+            if (closest) {
+                const closestLots = parkingCopy.filter(parkingLot => parkingLot.distance <= 0.6)
+                setParkingCopy(closestLots)
+            }
+            else {
+                setParkingCopy(parkingLots)
+            }
+        },
+        [closest]
+    )
+
+    const showAll = () => {
+        setClosest(false)
+        setExpensive (false)
+    }
+
     const handleSaveButtonClick = (event, parkingLot) => {
         event.preventDefault()
 
@@ -63,9 +82,10 @@ export const ParkingList = () => {
             <div className="listLabel">
                 <h2> Available Parking Lots </h2>
             </div>
-            <aside>
+            <aside className="buttons">
                 <button className="cheapButton" onClick={() => { setExpensive(true) }}> Cheapest Lots </button>
-                <button className="showAllButton" onClick={() => { setExpensive(false) }}> See All Lots </button>
+                <button className="cheapButton" onClick={() => { setClosest(true) }}> Closest Lots </button>
+                <button className="showAllButton" onClick={() => { showAll() }}> See All Lots </button>
             </aside>
 
             <section className="lots">

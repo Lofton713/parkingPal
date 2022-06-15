@@ -50,7 +50,7 @@ export const ParkingForm = () => {
 
 
     return (
-        <form className="logForm">
+        <form className="lotForm">
             <h2 className="lotForm__title">Add New Parking Lot</h2>
             <fieldset>
                 <div className="form-group">

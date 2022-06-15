@@ -1,0 +1,23 @@
+.products { 
+    display: flex;
+    flex-direction: column;
+}
+
+
+.product {
+    border-style: groove;
+    background-color: purple;
+    color: goldenrod;
+    margin: .5rem;
+    height: 2rem;
+    width: 40rem;
+    
+}
+
+.purchaseButton {
+    
+    margin-left: 5rem;
+    display: inline-flex;
+
+
+}

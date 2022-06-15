@@ -63,7 +63,7 @@ export const Profile = () => {
     return <>
 
         <div>
-            <button className="addLotButton" onClick={() => navigate("")}> Add Parking Lot</button>
+            <button className="addLotButton" onClick={() => navigate("/ParkingForm")}> Add Parking Lot</button>
         </div>
 
         <h2> My Parking Favorites </h2>

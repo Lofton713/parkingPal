@@ -78,14 +78,14 @@ export const ParkingList = () => {
     }
 
     return <>
-        <main>
+        <main className="container">
             <div className="listLabel">
                 <h2> Available Parking Lots </h2>
             </div>
             <aside className="buttons">
-                <button className="cheapButton" onClick={() => { setExpensive(true) }}> Cheapest Lots </button>
-                <button className="cheapButton" onClick={() => { setClosest(true) }}> Closest Lots </button>
-                <button className="showAllButton" onClick={() => { showAll() }}> See All Lots </button>
+                <button className="button-32" role="button" onClick={() => { setExpensive(true) }}> Cheapest Lots </button>
+                <button className="button-32" role="button" onClick={() => { setClosest(true) }}> Closest Lots </button>
+                <button className="button-32" role="button" onClick={() => { showAll() }}> See All Lots </button>
             </aside>
 
             <section className="lots">

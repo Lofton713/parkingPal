@@ -2,4 +2,13 @@
     background-color: navy;
     color: gold;
     text-align: center;
+    border-radius: 15px ;
+}
+
+.title {
+    text-shadow: 5px 5px black;
+}
+
+.motto {
+    text-shadow: 2px 2px black;
 }

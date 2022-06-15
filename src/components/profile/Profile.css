@@ -9,17 +9,57 @@
     margin: .5rem;
     height: auto;
     width: 40rem;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px
 }
 
 .SGFavs {
-    flex-direction: column;
+    flex-direction: grid;
 }
 
 .SGFav {
     border-style: groove;
-    background-color: grey;
-    color: navy;
+    background-color: Navy;
+    color: gold;
     margin: .5rem;
     height: auto;
-    width: 40rem;
+    width: 20rem;
+    border-radius: 15px ;
+    box-shadow: 10px 10px 5px black
+}
+
+.SGLink {
+    color: navy;
+}
+
+.addLotButton {
+    background-color: #fff000;
+  border-radius: 12px;
+  color: navy;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-align: center;
+  transition: 200ms;
+  width: 20%;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 10px;
+}
+
+.addLotButton:not(:disabled):hover,
+.addLotButton:not(:disabled):focus {
+  outline: 0;
+  background: #f4e603;
+  box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+}
+
+.addLotButton:disabled {
+  filter: saturate(0.2) opacity(0.5);
+  -webkit-filter: saturate(0.2) opacity(0.5);
+  cursor: not-allowed;
 }

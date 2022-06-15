@@ -4,6 +4,7 @@ import { ParkingList } from "../parking/ParkingLists"
 import { SupportersList } from "../supporters/SupportersList"
 import "./ApplicationViews.css"
 import { ParkingForm } from "../profile/ParkingFrom"
+import { Home } from "../auth/Home"
 
 export const ApplicationViews = () => {
 	
@@ -12,8 +13,8 @@ export const ApplicationViews = () => {
             <Route path="/" element={
                 <>
                     <div className="pageHeader">
-                        <h1>The NSC Parking Pal</h1>
-                        <h3>Everyone N!!</h3>
+                        <h1 className="title">The NSC Parking Pal</h1>
+                        <h3 className="motto">Everyone N!!</h3>
                     </div>
 
                     <Outlet />
@@ -24,6 +25,7 @@ export const ApplicationViews = () => {
                 <Route path="profile" element={ <Profile /> } />
                 <Route path="supporterGroups" element={ <SupportersList /> } />
                 <Route path="parkingForm" element={ <ParkingForm /> } />
+                <Route path="" element={ <Home /> } />
 
 				
             </Route>

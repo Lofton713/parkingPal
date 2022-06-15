@@ -9,18 +9,51 @@
 .lot {
     border-style: groove;
     background-color: navy;
-    color: goldenrod;
+    color: #fff000;
     margin: .5rem;
     height: auto;
-    width: auto;
+    width: 40rem;
     padding: 1rem;
+    box-shadow: 2px 2px #f4e603;
+    border-radius: 15px;
     
 }
 
-.favButton {
-    
-    margin-left: 5rem;
-    display: inline-flex;
+.container {
+    display: grid;
+    flex-direction: row;
+}
 
 
+/* CSS */
+.button-32 {
+  background-color: #fff000;
+  border-radius: 12px;
+  color: navy;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-align: center;
+  transition: 200ms;
+  width: 20%;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 10px;
+}
+
+.button-32:not(:disabled):hover,
+.button-32:not(:disabled):focus {
+  outline: 0;
+  background: #f4e603;
+  box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+}
+
+.button-32:disabled {
+  filter: saturate(0.2) opacity(0.5);
+  -webkit-filter: saturate(0.2) opacity(0.5);
+  cursor: not-allowed;
 }

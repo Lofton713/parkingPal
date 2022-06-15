@@ -32,7 +32,7 @@ export const Login = () => {
         <main className="container--login">
             <section>
                 <form className="form--login" onSubmit={handleLogin}>
-                    <h1>Parking Pal</h1>
+                    <h1>NSC Parking Pal</h1>
                     <h2>Please sign in</h2>
                     <fieldset>
                         <label htmlFor="inputEmail"> Email Address </label>
@@ -49,6 +49,12 @@ export const Login = () => {
                         </button>
                     </fieldset>
                 </form>
+            </section>
+            <section>
+                <iframe src="https://open.spotify.com/embed/track/69sEc6bOpzzgCyYr7dowfH?utm_source=generator"
+                    width="100%" height="380" frameBorder="0"  
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+                </iframe>
             </section>
             <section className="link--register">
                 <Link to="/register">Not a member yet?</Link>

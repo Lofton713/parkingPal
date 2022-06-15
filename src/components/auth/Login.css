@@ -16,7 +16,7 @@ fieldset {
 }
 
 .form--login > fieldset > input[type="email"] {
-    width: 25em;
+    width: 25rem;
 }
 
 .label--login {
@@ -43,7 +43,6 @@ fieldset {
 
 .container--login {
     text-align: center;
-    
 }
 
 .form--login {

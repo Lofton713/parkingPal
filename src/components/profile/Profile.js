@@ -98,6 +98,7 @@ export const Profile = () => {
                     (SGFave) => {
                         return <article className="SGFav" key={`supporterGroupFavorite--${SGFave.id}`}>
                             <p>{SGFave.supporterGroup.name}   </p>
+                            
                             <a className="SGLink" href={SGFave.supporterGroup.website} rel="noreferrer" target="_blank"> Check out their website </a>
                             <footer>
                                 <button className="reomoveButton" onClick={() => {

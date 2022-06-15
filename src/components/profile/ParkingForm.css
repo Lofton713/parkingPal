@@ -7,17 +7,20 @@
 .product {
     border-style: groove;
     background-color: purple;
-    color: goldenrod;
+    color: #fff000;
     margin: .5rem;
     height: 2rem;
     width: 40rem;
     
 }
 
-.purchaseButton {
+.submitButton {
     
     margin-left: 5rem;
     display: inline-flex;
+    box-shadow: 5px 5px black;
+}
 
-
+.lotForm {
+    text-align: center;
 }

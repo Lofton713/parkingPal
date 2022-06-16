@@ -7,14 +7,14 @@
 
 
 .lot {
-    border-style: groove;
+    border-style: solid; 
     background-color: navy;
     color: #fff000;
     margin: .5rem;
     height: auto;
     width: 40rem;
     padding: 1rem;
-    box-shadow: 2px 2px #f4e603;
+    box-shadow: 2px 2px black;
     border-radius: 15px;
     
 }

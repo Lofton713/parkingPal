@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 import "./ParkingList.css"
 
 export const ParkingList = () => {
@@ -11,6 +12,8 @@ export const ParkingList = () => {
 
     const currentUser = localStorage.getItem("pal_user")
     const currentUserObject = JSON.parse(currentUser)
+
+    const navigate = useNavigate() 
 
     useEffect(
         () => {
@@ -86,6 +89,7 @@ export const ParkingList = () => {
                 <button className="button-32" role="button" onClick={() => { setExpensive(true) }}> Cheapest Lots </button>
                 <button className="button-32" role="button" onClick={() => { setClosest(true) }}> Closest Lots </button>
                 <button className="button-32" role="button" onClick={() => { showAll() }}> See All Lots </button>
+                <button className="button-32" role="button" onClick={() => navigate("/myLots")}> Lots I've Added </button>
             </aside>
 
             <section className="lots">

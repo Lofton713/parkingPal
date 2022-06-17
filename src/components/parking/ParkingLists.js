@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 import { useState } from "react"
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import "./ParkingList.css"
 
 export const ParkingList = () => {
@@ -98,7 +98,7 @@ export const ParkingList = () => {
                         (parkingLot) => {
                             return <article className="lot" key={`parkingLot--${parkingLot.id}`}>
                                 <header>
-                                    <h4>{parkingLot.name}</h4>
+                                    <Link className="lotname" to={`/parkingDetails/${parkingLot.id}`}> {parkingLot.name}</Link>
                                 </header>
                                 <div>
                                     - Address: {parkingLot.address}
@@ -110,11 +110,6 @@ export const ParkingList = () => {
                                     <button className="favButton" onClick={(clickEvent) => handleSaveButtonClick(clickEvent, parkingLot)}>
                                         Add to Favorites</button>
                                 </footer>
-
-
-
-
-
                             </article>
                         }
                     )

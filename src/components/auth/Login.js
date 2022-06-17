@@ -32,7 +32,7 @@ export const Login = () => {
         <main className="container--login">
             <section>
                 <form className="form--login" onSubmit={handleLogin}>
-                    <h1>NSC Parking Pal</h1>
+                    <h1>NSC Parking: DEFINED</h1>
                     <h2>Please sign in</h2>
                     <fieldset>
                         <label htmlFor="inputEmail"> Email Address </label>

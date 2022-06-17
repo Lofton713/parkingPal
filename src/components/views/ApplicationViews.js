@@ -7,6 +7,7 @@ import { ParkingForm } from "../profile/ParkingFrom"
 import { Home } from "../auth/Home"
 import { MyLots } from "../parking/MyLots"
 import { ParkingEdit } from "../parking/ParkingEdit"
+import { ParkingDetails } from "../parking/ParkingDetails"
 
 export const ApplicationViews = () => {
 	
@@ -15,7 +16,7 @@ export const ApplicationViews = () => {
             <Route path="/" element={
                 <>
                     <div className="pageHeader">
-                        <h1 className="title">The NSC Parking Pal</h1>
+                        <h1 className="title">NSC Parking: DEFINED</h1>
                         <h2 className="motto">Everyone N!!</h2>
                     </div>
 
@@ -30,6 +31,7 @@ export const ApplicationViews = () => {
                 <Route path="" element={ <Home /> } />
                 <Route path="myLots" element={ < MyLots /> } />
                 <Route path="parkingEdit/:parkingLotId" element={ < ParkingEdit /> } />
+                <Route path="parkingDetails/:parkingLotId" element={ <ParkingDetails />} />
 
 				
             </Route>

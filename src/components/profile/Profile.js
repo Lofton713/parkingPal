@@ -80,6 +80,9 @@ export const Profile = () => {
                                     fetch(`http://localhost:8088/parkingFavorites/${parkingFavorite.id}`, {
                                         method: "DELETE"
                                     })
+                                    .then(() => {
+                                        navigate("/profile")
+                                    })
                                 }
                                 }>Remove Favorite
                                 </button>
@@ -104,6 +107,9 @@ export const Profile = () => {
                                 <button className="reomoveButton" onClick={() => {
                                     fetch(`http://localhost:8088/SGFaves/${SGFave.id}`, {
                                         method: "DELETE"
+                                    })
+                                    .then(() => {
+                                        navigate("/profile")
                                     })
                                 }
                                 }>Remove Favorite

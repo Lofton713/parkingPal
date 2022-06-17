@@ -106,7 +106,7 @@ export const ParkingList = () => {
                                     - Price: ${parkingLot.price} per match
                                 </div>
                                 <footer>
-                                    Added by: {parkingLot.userId}
+                                    Added by: {parkingLot.user.username}
                                     <button className="favButton" onClick={(clickEvent) => handleSaveButtonClick(clickEvent, parkingLot)}>
                                         Add to Favorites</button>
                                 </footer>

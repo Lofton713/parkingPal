@@ -50,11 +50,11 @@ export const MyLots = () => {
                                 
                                 <footer>
                                     
-                                    <button className="editButton" onClick={() => navigate("/ParkingEdit")}>
+                                    <button className="editButton" onClick={() => navigate(`/ParkingEdit/${parkingLot.id}`)}>
                                         Edit</button>
 
                                     <button className="deleteButton" onClick={() => {
-                                        fetch(`http://localhost:8088/parkingFavorites/${parkingLot.id}`, {
+                                        fetch(`http://localhost:8088/parkingLots/${parkingLot.id}`, {
                                             method: "DELETE"
                                         })
                                     }}>

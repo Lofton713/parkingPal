@@ -12,23 +12,25 @@ export const ParkingEdit = () => {
         address: "",
         distance: "",
         description: "",
-        userId: "",
+        userId: currentUserObject.id,
         parkingLotTypeId: "",
-        id: currentUserObject.id
+        id: ""
+               
     })
 
+    const { parkingLotId } = useParams()
     const navigate = useNavigate()
 
     // TODO: Get the ticket state from the API.
     useEffect(() => {
-        fetch(`http://localhost:8088/parkinglots/${parkingLot.id}`)
+        fetch(`http://localhost:8088/parkinglots/${parkingLotId}`)
             .then(res => res.json())
             .then((data) => {
                 const parkingLotObject = data
                 update(parkingLotObject)
             })
-
-    }, [])
+    },
+    [parkingLotId])
 
     const handleSaveButtonClick = (event) => {
         event.preventDefault()

@@ -29,7 +29,7 @@ export const ApplicationViews = () => {
                 <Route path="parkingForm" element={ <ParkingForm /> } />
                 <Route path="" element={ <Home /> } />
                 <Route path="myLots" element={ < MyLots /> } />
-                <Route path="parkingEdit" element={ < ParkingEdit /> } />
+                <Route path="parkingEdit/:parkingLotId" element={ < ParkingEdit /> } />
 
 				
             </Route>

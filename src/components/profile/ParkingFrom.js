@@ -30,7 +30,7 @@ export const ParkingForm = () => {
             distance: lot.distance,
             description: lot.description,
             userId: currentUserObject.id,
-            parkingLotTypeId: ""
+            parkingLotTypeId: lot.parkingLotTypeId
         }
 
         return fetch('http://localhost:8088/parkingLots', {

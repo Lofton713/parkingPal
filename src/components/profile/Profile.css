@@ -1,39 +1,43 @@
 .parkingFavs {
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+  height:auto;
 }
 
 .parkingFav {
-    border-style: groove;
-    background-color: gold;
-    color: navy;
-    margin: .5rem;
-    height: auto;
-    width: 40rem;
-    border-radius: 15px;
-    box-shadow: 10px 10px 5px
+  border-style: solid; 
+  background-color: navy;
+  color: #fff000;
+  margin: .5rem;
+  height: auto;
+  width: 40rem;
+  padding: 1rem;
+  box-shadow: 2px 2px black;
+  border-radius: 15px;
 }
 
 .SGFavs {
-    flex-direction: grid;
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+  height:auto;
 }
 
 .SGFav {
-    border-style: groove;
-    background-color: Navy;
-    color: gold;
-    margin: .5rem;
-    height: auto;
-    width: 20rem;
-    border-radius: 15px ;
-    box-shadow: 10px 10px 5px black
-}
-
-.SGLink {
-    color: navy;
+  border-style: solid; 
+  background-color: #fff000;
+  color: navy;
+  margin: .5rem;
+  height: auto;
+  width: 40rem;
+  padding: 1rem;
+  box-shadow: 2px 2px black;
+  border-radius: 15px;
 }
 
 .addLotButton {
-    background-color: #fff000;
+  background-color: #fff000;
   border-radius: 12px;
   color: navy;
   cursor: pointer;

@@ -49,6 +49,12 @@ export const ParkingEdit = () => {
     }
 
     return(
+        <>
+        <button
+                onClick={() => navigate(`/MyLots`)}
+                id="backButton" className="button-32" role="button">
+                Back to My Lots
+            </button>
 
 
     <form className="lotForm">
@@ -74,8 +80,8 @@ export const ParkingEdit = () => {
                 <div className="form-group">
                     <label htmlFor="lotPrice">Per Game Price:</label>
                     <input
-                        required autoFocus
-                        type="text"
+                        // required autoFocus
+                        type="number"
                         className="form-control"
                         value={parkingLot.price}
                         onChange={
@@ -156,7 +162,7 @@ export const ParkingEdit = () => {
                                 update(copy)
                             }
                         }
-                    >
+                        >
                         <option value="0">Please select option below</option>
                         <option value="1">Private-Residential</option>
                         <option value="2">Private-Commercial</option>
@@ -172,6 +178,7 @@ export const ParkingEdit = () => {
                 Save Changes
             </button>
         </form>
+    </>
     )
                  
 }

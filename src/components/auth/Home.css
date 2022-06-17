@@ -1,5 +1,12 @@
 .NSCMural {
     border-radius: 7px;
-    border-style: groove;
+    border-style: solid;
+    width: 100%;
+    box-shadow: 2px 2px black;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+
 
 }

@@ -7,13 +7,15 @@
 
 
 .SG {
-    border-style: groove;
+    border-style: solid; 
     background-color: navy;
-    color: goldenrod;
+    color: #fff000;
     margin: .5rem;
     height: auto;
-    width: auto;
+    width: 40rem;
     padding: 1rem;
+    box-shadow: 2px 2px black;
+    border-radius: 15px;
     
 }
 
@@ -24,6 +26,6 @@
 }
 
 .SGLink {
-    padding-top: 5rem;
-    color: gold;
+    
+    color: red
 }

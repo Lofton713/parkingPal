@@ -1,14 +1,23 @@
 .pageHeader {
-    background-color: navy;
+    display: flex;
+    margin: auto;
+    width: 50%;
+    background-color: rgb(24, 17, 73);
     color: #fff000;
     text-align: center;
     border-radius: 15px ;
+    background-image: url("https://wallpapercave.com/wp/wp8847494.jpg");
 }
 
 .title {
     text-shadow: 5px 5px black;
+    
 }
 
 .motto {
     text-shadow: 2px 2px black;
+}
+
+.NSCDarkLogo {
+    align-self: center;
 }

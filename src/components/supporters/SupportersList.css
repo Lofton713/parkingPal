@@ -3,6 +3,7 @@
     flex-direction: column;
     flex-flow: wrap;
     height:auto;
+    margin: auto;
 }
 
 
@@ -12,7 +13,7 @@
     color: #fff000;
     margin: .5rem;
     height: auto;
-    width: 40rem;
+    width: 30rem;
     padding: 1rem;
     box-shadow: 2px 2px black;
     border-radius: 15px;
@@ -21,11 +22,34 @@
 
 .favButton {
     
-    margin-left: 5rem;
-    display: inline-flex;
+    margin-left: 10rem;
+    align-items:flex-end
 }
 
 .SGLink {
-    
+    margin-top: 4rem;   
     color: red
 }
+
+.SGlabel{
+    color: #fff000;
+}
+
+.listlabel{
+    display: flexbox;
+    margin: auto;
+    width: 50%;
+}
+
+.backlineLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 15px;
+}
+
+.SGlogos {
+    display: flex;
+}
+

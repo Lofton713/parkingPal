@@ -1,5 +1,12 @@
 import { useEffect, useState } from "react"
 import "./SupportersList.css"
+import NSCDarkLogo from '../images/TheBackline.png'
+import roadiesLogo from '../images/roadiesLogo.png'
+import AssemblyLogo from '../images/AssemblyLogo.png'
+import EasternFrontLogo from '../images/EasternFrontLogo.png'
+import MCHeatersLogo from '../images/MCHeatersLogo.png'
+import LBDOLogo from '../images/LBDOLogo.png'
+import MixTapeLogo from '../images/MixTapeLogo.png'
 
 export const SupportersList = () => {
 
@@ -39,7 +46,9 @@ export const SupportersList = () => {
     return <>
         <main>
             <div className="listLabel">
-                <h2> Official Supporters Groups </h2>
+                {/* <h2 className="SGlabel"> Official Supporters Groups </h2> */}
+                <img className='backlineLogo' src={NSCDarkLogo} alt="logo" style={{ width: '700px', height: '250px' }} />
+                
             </div>
             
             <section className="supporters">
@@ -58,16 +67,19 @@ export const SupportersList = () => {
                                     <button className="favButton" onClick={(clickEvent) => handleSaveButtonClick(clickEvent, supporterGroup)}>
                                         Add to Favorites</button>
                                 </footer>
-
-
-
-
-
                             </article>
                         }
                     )
                 }
             </section>
+            <div className="SGlogos">
+            <img className='backlineLogo' src={roadiesLogo} alt="logo" style={{ width: '100px', height: '100px' }} />
+            <img className='backlineLogo' src={AssemblyLogo} alt="logo" style={{ width: '100px', height: '100px' }} />
+            <img className='backlineLogo' src={EasternFrontLogo} alt="logo" style={{ width: '100px', height: '100px' }} />
+            <img className='backlineLogo' src={MCHeatersLogo} alt="logo" style={{ width: '100px', height: '100px' }} />
+            <img className='backlineLogo' src={LBDOLogo} alt="logo" style={{ width: '100px', height: '100px' }} />
+            <img className='backlineLogo' src={MixTapeLogo} alt="logo" style={{ width: '100px', height: '100px' }} />  
+            </div>
         </main>
 
     </>

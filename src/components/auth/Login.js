@@ -51,8 +51,8 @@ export const Login = () => {
                 </form>
             </section>
             <section>
-                <iframe src="https://open.spotify.com/embed/track/69sEc6bOpzzgCyYr7dowfH?utm_source=generator"
-                    width="100%" height="380" frameBorder="0"  
+                <iframe title="anthem" src="https://open.spotify.com/embed/track/69sEc6bOpzzgCyYr7dowfH?utm_source=generator"
+                    width="300" height="380" frameBorder="0"  
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
                 </iframe>
             </section>

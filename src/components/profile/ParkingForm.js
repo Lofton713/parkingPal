@@ -42,12 +42,7 @@ export const ParkingForm = () => {
             .then(() => {
                 navigate("/parkingLots")
             })
-
     }
-
-
-
-
 
     return (
         <>
@@ -180,5 +175,4 @@ export const ParkingForm = () => {
             </form>
         </>
     )
-
 }

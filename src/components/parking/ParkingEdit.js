@@ -174,7 +174,7 @@ export const ParkingEdit = () => {
             </fieldset>
             <button
                 onClick={(clickEvent) => handleSaveButtonClick(clickEvent)}
-                className="saveButton">
+                className="button-88">
                 Save Changes
             </button>
         </form>

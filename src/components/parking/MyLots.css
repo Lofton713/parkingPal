@@ -1,0 +1,29 @@
+/* CSS */
+.button-99 {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0.7em 1.4em 0.7em 1.1em;
+    color: white;
+    background: red;
+    background: linear-gradient(0deg, rgb(167, 37, 20) 0%, rgb(247, 102, 102) 100%);
+    border: none; 
+    box-shadow: 0 0.7em 1.5em -0.5em #a72a1498;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: auto;
+  }
+  
+  .button-99:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em #a71e1498;
+  }
+  
+  .button-99:active {
+    box-shadow: 0 0.3em 1em -0.5em #a7471498;
+  }

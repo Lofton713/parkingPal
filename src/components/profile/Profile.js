@@ -76,7 +76,7 @@ export const Profile = () => {
                             <p>{parkingFavorite?.parkingLot?.name}  -  ${parkingFavorite?.parkingLot?.price} Per match</p>
                             <p>{parkingFavorite.parkingLot.address}</p>
                             <footer>
-                                <button className="reomoveButton" onClick={() => {
+                                <button className="button-99" onClick={() => {
                                     fetch(`http://localhost:8088/parkingFavorites/${parkingFavorite.id}`, {
                                         method: "DELETE"
                                     })
@@ -110,7 +110,7 @@ export const Profile = () => {
                             
                             <a className="SGLink" href={SGFave.supporterGroup.website} rel="noreferrer" target="_blank"> Check out their website </a>
                             <footer>
-                                <button className="reomoveButton" onClick={() => {
+                                <button className="button-99" onClick={() => {
                                     fetch(`http://localhost:8088/SGFaves/${SGFave.id}`, {
                                         method: "DELETE"
                                     })

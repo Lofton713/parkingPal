@@ -13,7 +13,7 @@ export const ParkingList = () => {
     const currentUser = localStorage.getItem("pal_user")
     const currentUserObject = JSON.parse(currentUser)
 
-    const navigate = useNavigate() 
+    const navigate = useNavigate()
 
     useEffect(
         () => {
@@ -60,7 +60,7 @@ export const ParkingList = () => {
 
     const showAll = () => {
         setClosest(false)
-        setExpensive (false)
+        setExpensive(false)
     }
 
     const handleSaveButtonClick = (event, parkingLot) => {
@@ -78,7 +78,7 @@ export const ParkingList = () => {
             body: JSON.stringify(newLotFav)
         })
             .then(res => res.json())
-            .then(() => {})
+            .then(() => { })
     }
 
     return <>
@@ -98,17 +98,17 @@ export const ParkingList = () => {
                     parkingCopy.map(
                         (parkingLot) => {
                             return <article className="lot" key={`parkingLot--${parkingLot.id}`}>
-                                <header>
+                                <header className="lotHeader">
                                     <Link className="lotname" to={`/parkingDetails/${parkingLot.id}`}> {parkingLot.name}</Link>
                                 </header>
-                                <div>
-                                    - Address: {parkingLot.address}
-                                    - Distance to Park: {parkingLot.distance} mi.
-                                    - Price: ${parkingLot.price} per match
-                                </div>
-                                <footer>
+                                <ul className="lotInfo">
+                                    <li>  {parkingLot.address}</li>
+                                    <li>{parkingLot.distance} mi. walk to Geodis Park</li>
+                                    <li> ${parkingLot.price} per match</li>
+                                </ul>
+                                <footer className="lotFooter">
                                     Added by: {parkingLot.user.username}
-                                    <button className="favButton" onClick={(clickEvent) => handleSaveButtonClick(clickEvent, parkingLot)}>
+                                    <button className="button-88" onClick={(clickEvent) => handleSaveButtonClick(clickEvent, parkingLot)}>
                                         Add to Favorites</button>
                                 </footer>
                             </article>

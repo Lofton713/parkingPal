@@ -65,6 +65,7 @@ export const ParkingList = () => {
 
     const handleSaveButtonClick = (event, parkingLot) => {
         event.preventDefault()
+        alert("Parking Lot Added to Favorites 👍")
 
         const newLotFav = {
             parkingLotId: parkingLot.id,
@@ -85,12 +86,12 @@ export const ParkingList = () => {
             <div className="listLabel">
                 <h2> Available Parking Lots </h2>
             </div>
-            <aside className="buttons">
+            <div className="buttons">
                 <button className="button-32" role="button" onClick={() => { setExpensive(true) }}> Cheapest Lots </button>
                 <button className="button-32" role="button" onClick={() => { setClosest(true) }}> Closest Lots </button>
                 <button className="button-32" role="button" onClick={() => { showAll() }}> See All Lots </button>
                 <button className="button-32" role="button" onClick={() => navigate("/myLots")}> Lots I've Added </button>
-            </aside>
+            </div>
 
             <section className="lots">
                 {

@@ -18,10 +18,10 @@ export const ApplicationViews = () => {
                 <>
                     <div className="pageHeader">
                         <img className='NSCDarkLogo' src={NSCDarkLogo} alt="logo" style={{ width: '200px', height: '100px' }} />
-                        <p>
+                        <section>
                             <h1 className="title">NSC Parking: DEFINED</h1>
-                            <h2 className="motto">Everyone N!!</h2>
-                        </p>
+                            <h2 className="motto">Everyone N!</h2>
+                        </section>
                         <img className='NSCDarkLogo' src={NSCDarkLogo} alt="logo" style={{ width: '200px', height: '100px' }} />
                     </div>
 

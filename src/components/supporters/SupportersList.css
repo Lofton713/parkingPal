@@ -3,7 +3,7 @@
     flex-direction: column;
     flex-flow: wrap;
     height:auto;
-    margin: auto;
+    margin-top: 2rem;
 }
 
 
@@ -20,15 +20,23 @@
     
 }
 
+.SGInfo {
+    padding-bottom: 1rem;
+}
+
+.SGFooter {
+    text-align: center;
+    align-items: flex-end;
+
+}
+
 .favButton {
-    
-    margin-left: 10rem;
     align-items:flex-end
 }
 
 .SGLink {
-    margin-top: 4rem;   
-    color: red
+    Margin-bottom: 10rem;
+    color: lightblue
 }
 
 .SGlabel{
@@ -53,3 +61,7 @@
     display: flex;
 }
 
+.button-88 {
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+}

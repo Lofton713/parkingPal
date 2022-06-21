@@ -60,12 +60,12 @@ export const SupportersList = () => {
                                 <header>
                                     <h4>{supporterGroup.name}</h4>
                                 </header>
-                                <div>
+                                <div className="SGInfo">
                                     -  {supporterGroup.description}
                                 </div>
-                                <footer>
-                                <a className="SGLink" href={supporterGroup.website} rel="noreferrer" target="_blank"> Check out their website </a>
-                                    <button className="favButton" onClick={(clickEvent) => handleSaveButtonClick(clickEvent, supporterGroup)}>
+                                <footer className="SGFooter">
+                                <a className="SGLink" href={supporterGroup.website} rel="noreferrer" target="_blank">{supporterGroup.name} website </a>
+                                    <button className="button-88" onClick={(clickEvent) => handleSaveButtonClick(clickEvent, supporterGroup)}>
                                         Add to Favorites</button>
                                 </footer>
                             </article>

@@ -169,7 +169,7 @@ export const ParkingForm = () => {
                 </fieldset>
                 <button
                     onClick={(clickEvent) => handleSaveButtonClick(clickEvent)}
-                    className="submitButton">
+                    className="button-88">
                     Submit New Parking Lot
                 </button>
             </form>

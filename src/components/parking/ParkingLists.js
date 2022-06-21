@@ -89,7 +89,7 @@ export const ParkingList = () => {
             <div className="buttons">
                 <button className="button-32" role="button" onClick={() => { setExpensive(true) }}> Cheapest Lots </button>
                 <button className="button-32" role="button" onClick={() => { setClosest(true) }}> Closest Lots </button>
-                <button className="button-32" role="button" onClick={() => { showAll() }}> See All Lots </button>
+                <button className="button-32" role="button" onClick={() => { showAll() }}> Show All Lots </button>
                 <button className="button-32" role="button" onClick={() => navigate("/myLots")}> Lots I've Added </button>
             </div>
 

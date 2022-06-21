@@ -1,12 +1,22 @@
 .NSCMural {
     border-radius: 7px;
     border-style: solid;
-    width: 100%;
+    width: 50%;
     box-shadow: 2px 2px black;
+    display: block;
     margin-left: auto;
     margin-right: auto;
+}
 
-    
+.homepage {
+    display: grid;
+}
 
-
+.Schedule {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 750px;
+    width: 750px;
+    padding: 10px;
 }

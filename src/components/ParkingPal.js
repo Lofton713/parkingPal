@@ -3,6 +3,7 @@ import { Login } from "./auth/Login"
 import { Register } from "./auth/Register"
 import { NavBar } from "./navi/NavBar"
 import "./ParkingPal.css"
+import { Socials } from "./socials/Socials"
 import { ApplicationViews } from "./views/ApplicationViews"
 import { Authorized } from "./views/Authorized"
 
@@ -17,6 +18,7 @@ export const ParkingPal = () => {
                 <>
                     <NavBar />
                     <ApplicationViews />
+                    <Socials />
                 </>
             </Authorized>
 

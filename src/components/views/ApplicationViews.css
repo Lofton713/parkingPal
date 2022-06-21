@@ -1,13 +1,15 @@
 .pageHeader {
     display: flex;
-    margin: auto;
-  width: 50%;
-    background-color: rgb(24, 17, 73);
-    color: #fff000;
     text-align: center;
+    color: #fff000;
     border-radius: 15px ;
     background-image: url("https://wallpapercave.com/wp/wp8847494.jpg");
-    
+    margin: auto;
+}
+
+.banner {
+    margin: auto;
+
 }
 
 .title {

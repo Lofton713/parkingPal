@@ -3,7 +3,7 @@ import { Profile } from "../profile/Profile"
 import { ParkingList } from "../parking/ParkingLists"
 import { SupportersList } from "../supporters/SupportersList"
 import "./ApplicationViews.css"
-import { ParkingForm } from "../profile/ParkingFrom"
+import { ParkingForm } from "../profile/ParkingForm"
 import { Home } from "../auth/Home"
 import { MyLots } from "../parking/MyLots"
 import { ParkingEdit } from "../parking/ParkingEdit"
@@ -18,7 +18,7 @@ export const ApplicationViews = () => {
                 <>
                     <div className="pageHeader">
                         <img className='NSCDarkLogo' src={NSCDarkLogo} alt="logo" style={{ width: '200px', height: '100px' }} />
-                        <section>
+                        <section className="banner">
                             <h1 className="title">NSC Parking: DEFINED</h1>
                             <h2 className="motto">Everyone N!</h2>
                         </section>

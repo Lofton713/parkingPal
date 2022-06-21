@@ -81,7 +81,13 @@ export const Profile = () => {
                                         method: "DELETE"
                                     })
                                     .then(() => {
-                                        navigate("/profile")
+                                        alert("Parking Lot has been removed from Favorites 👍")
+                                    })
+                                    .then((myParkingFavs) => {
+                                        setFilteredParkingFavorites(myParkingFavs)
+                                    })
+                                    .then(() => {
+                                        window.location.reload(false);
                                     })
                                 }
                                 }>Remove Favorite
@@ -109,7 +115,13 @@ export const Profile = () => {
                                         method: "DELETE"
                                     })
                                     .then(() => {
-                                        navigate("/profile")
+                                        alert("Parking Lot has been removed from Favorites 👍")
+                                    })
+                                    .then((mySGFavs) => {
+                                        setFilteredSGFaves(mySGFavs)
+                                    })
+                                    .then(() => {
+                                        window.location.reload(false);
                                     })
                                 }
                                 }>Remove Favorite

@@ -28,6 +28,7 @@ export const SupportersList = () => {
 
     const handleSaveButtonClick = (event, supporterGroup) => {
         event.preventDefault()
+        alert("SG Added to Favorites 👍")
 
         const newSGFav = {
             userId: currentUserObject.id,

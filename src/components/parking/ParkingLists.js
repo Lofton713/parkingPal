@@ -9,11 +9,21 @@ export const ParkingList = () => {
     const [parkingCopy, setParkingCopy] = useState([])
     const [expensive, setExpensive] = useState(false)
     const [closest, setClosest] = useState(false)
+    const [searchTerms, setSearchTerms] = useState("")
 
     const currentUser = localStorage.getItem("pal_user")
     const currentUserObject = JSON.parse(currentUser)
 
     const navigate = useNavigate()
+
+    useEffect(
+        () => {
+            const searchedParkingLot = parkingLots.filter(parkingLot =>
+                parkingLot.name.toLowerCase().includes(searchTerms.toLowerCase()))
+            setParkingCopy(searchedParkingLot)
+        },
+        [searchTerms] //watching the terms in the search box
+    )
 
     useEffect(
         () => {
@@ -84,13 +94,23 @@ export const ParkingList = () => {
     return <>
         <main className="container">
             <div className="listLabel">
-                <h2> Available Parking Lots </h2>
+              
             </div>
             <div className="buttons">
                 <button className="button-32" role="button" onClick={() => { setExpensive(true) }}> Cheapest Lots </button>
                 <button className="button-32" role="button" onClick={() => { setClosest(true) }}> Closest Lots </button>
                 <button className="button-32" role="button" onClick={() => { showAll() }}> Show All Lots </button>
                 <button className="button-32" role="button" onClick={() => navigate("/myLots")}> Lots I've Added </button>
+            </div>
+            <div className="lotSearch">
+                <header className="searchtitle">Looking for a specific lot?</header>
+                <input className="searchbox"
+                    onChange={
+                        (changeEvent) => {
+                            setSearchTerms(changeEvent.target.value)
+                        }
+                    } type="text" placeholder="Enter Lot Name Here" />
+
             </div>
 
             <section className="lots">

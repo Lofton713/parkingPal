@@ -1,24 +1,19 @@
 .navbar {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    text-align: center;
     background-color:#fff000;
     font-style: oblique;
-    
-    font-size: x-large;
     color: navy;
-    border-radius: 15px ;
-    
+    border-radius: 15px;  
         
 }
 
 .navbar__item {
-    flex-basis: 20%;
+    padding-left: 35px;
+    padding-right: 35px;
+    flex-basis: 15%;
     list-style-type: none;
-    text-decoration-color: red;
-    text-shadow: 1px 1px black;
+    font-size: x-large;     
 }
 
-.navbar__logout {
-    margin-left: auto;
-}

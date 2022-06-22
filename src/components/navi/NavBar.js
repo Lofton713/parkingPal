@@ -1,5 +1,6 @@
 import { Link, useNavigate } from "react-router-dom"
 import "./NavBar.css"
+import Tempo from '../images/Tempo.png'
 
 
 export const NavBar = () => {
@@ -7,7 +8,7 @@ export const NavBar = () => {
 
     return (
         <ul className="navbar">
-           <li className="navbar__item active">
+            <li className="navbar__item active">
                 <Link className="navbar__link" to="/">Home</Link>
             </li>
 
@@ -22,7 +23,6 @@ export const NavBar = () => {
             <li className="navbar__item active">
                 <Link className="navbar__link" to="/profile">My Profile</Link>
             </li>
-
             
             <li className="navbar__item navbar__logout">
                 <Link className="navbar__link" to="" onClick={() => {

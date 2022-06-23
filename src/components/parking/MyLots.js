@@ -36,8 +36,8 @@ export const MyLots = () => {
     
     return <>
         <main className="container">
-            <div className="listLabel">
-                <h2> Added Parking Lots </h2>
+            <div>
+                <h2 className="listLabel"> Added Parking Lots </h2>
                 <button className="button-32" role="button" onClick={() => navigate("/Parkinglots") }> Back to All Lots </button>
             </div>
              <section className="lots">

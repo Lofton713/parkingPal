@@ -9,6 +9,7 @@ import { MyLots } from "../parking/MyLots"
 import { ParkingEdit } from "../parking/ParkingEdit"
 import { ParkingDetails } from "../parking/ParkingDetails"
 import NSCDarkLogo from '../images/Nashville-SC.png'
+import { CommentsForm } from "../parking/CommentsForm"
 
 export const ApplicationViews = () => {
 
@@ -37,6 +38,7 @@ export const ApplicationViews = () => {
                 <Route path="myLots" element={< MyLots />} />
                 <Route path="parkingEdit/:parkingLotId" element={< ParkingEdit />} />
                 <Route path="parkingDetails/:parkingLotId" element={<ParkingDetails />} />
+                <Route path="commentsForm/:parkingLotId" element={<CommentsForm />} />
 
 
             </Route>

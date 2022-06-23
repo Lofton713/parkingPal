@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { useNavigate, useParams } from "react-router-dom"
+import "./ParkingEdit.css"
 
 export const ParkingEdit = () => {
 
@@ -58,10 +59,10 @@ export const ParkingEdit = () => {
 
 
     <form className="lotForm">
-            <h2 className="lotForm__title">Update Parking Lot</h2>
+            <h2 className="formTitle">Update Parking Lot</h2>
             <fieldset>
                 <div className="form-group">
-                    <label htmlFor="productName">Name:</label>
+                    <label htmlFor="field">Name:</label>
                     <input
                         required autoFocus
                         type="text"

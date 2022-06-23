@@ -66,7 +66,7 @@ export const Profile = () => {
             <button className="addLotButton" onClick={() => navigate("/ParkingForm")}> Add Parking Lot</button>
         </div>
 
-        <h2> My Parking Favorites </h2>
+        <h2 className="parkingTitle"> My Parking Favorites </h2>
 
         <section className="parkingFavs">
             {
@@ -99,7 +99,7 @@ export const Profile = () => {
                 )
             }
         </section>
-        <h2> My Favorite Supporter Groups </h2>
+        <h2 className="SGTitle"> My Favorite Supporter Groups </h2>
 
         <section className="SGFavs">
             {

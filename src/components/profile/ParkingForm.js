@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom"
 import { useState } from "react"
+import "./ParkingForm.css"
 
 export const ParkingForm = () => {
 
@@ -53,7 +54,7 @@ export const ParkingForm = () => {
             </button>
 
             <form className="lotForm">
-                <h2 className="lotForm__title">Add New Parking Lot</h2>
+                <h2 className="title">Add New Parking Lot</h2>
                 <fieldset>
                     <div className="form-group">
                         <label htmlFor="productName">Name:</label>

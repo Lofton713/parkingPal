@@ -9,7 +9,7 @@
 }
 
 .comment {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
       border-style: solid; 
       background-color: navy;
